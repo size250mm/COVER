@@ -1,0 +1,87 @@
+@charset "UTF-8";
+*{transition: .5s; cursor: none!important;}
+body,html{scroll-behavior: smooth;}
+a:hover{text-decoration: none!important; color: #666!important;}
+a:link{text-decoration: none!important;}
+a:visited{text-decoration: none!important;}
+.head-bottom p a{color: #666!important;}
+.head-bottom:hover{color: #666!important;}
+body::-webkit-scrollbar {display: none;}
+.row{margin: 0!important;}
+.nav{width: 80px; height: 100%; padding: 0!important; color: #fff; z-index: 9000; transition: 1s; position: fixed; top: 0; left: 0;}
+.nav .nav-group{width: 100%; height: 100vh; display: flex; flex-direction: column; justify-items: center; justify-content: center;}
+.nav .nav-group .nav-logo{display: flex; justify-content: center;width: 100%; height: 40px; align-items: center;}
+.nav .nav-group .nav-logo img{width: 24px; height: 24px;}
+.nav .nav-group .line-group{height: 30%; width: 100%; display: flex; justify-content: center; align-items: center;}
+.nav .nav-group .line-group .line{background: #fff; height: 90%; width: 1px; opacity: .5;}
+
+.nav .nav-group .ham-group{width: 100%; height: 40px;}
+.nav .nav-group .ham-group:hover{cursor: pointer;}
+.nav .nav-group .ham-group span{width: 30px; height: 2px; background: #fff; display: block; border-radius: 5px;}
+
+.nav .nav-group .ham-group span:nth-child(1){transform: translate(0,-5px);}
+.nav .nav-group .ham-group span:nth-child(2){transform: translate(0,0);}
+.nav .nav-group .ham-group span:nth-child(3){transform: translate(0,5px);}
+
+.nav .nav-group .ham-group .ham-wrap{width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.page-indi{position: absolute; top: 25%; left: calc(50% + 20px);
+transform-origin: right; overflow: hidden;}
+.page-indi p a{font-size: 24px; text-transform: uppercase; font-family: 'Roboto', sans-serif; font-weight: 500; color: #fff; left: -100%; opacity: 0;}
+
+.ham-list{position: fixed; top: 0; left: -100%; width: 80%; height: 100vh; background: rgba(0,0,0,.9); transition: 2s; margin: 0!important; z-index: 9000;}
+
+
+.ham-list .ham-list-wrap{width: 100%; height: 100%; display: flex; justify-content: flex-start; align-items: center;  background: #fff;}
+.ham-list .ham-list-wrap ol{left: 10%;}
+.ham-list .ham-list-wrap ol li{}
+.ham-list .ham-list-wrap ol li a{text-transform: uppercase; font-size: 100px; font-weight: 700; font-family: 'Roboto', sans-serif; letter-spacing: 5px; color: #000;}
+
+.cursor-base{position: fixed; left: 50%; top: 50%; width: 25px; height: 25px;  background: #fff; border-radius: 50%; transition:transform 1s; cursor: none; transform: translate(-50%,-50%); pointer-events: none; mix-blend-mode: difference; z-index: 999999;}
+
+.cursor-eff1{width: 100%; height: 100%; border-radius: 50%; position: absolute; top: 0; left: 0; background: #fff;
+ 
+}
+.cursor-eff2{border: 5px solid #f2f2f2; width: 100%; height: 100%; border-radius: 50%;
+position: absolute; top: 0; left: 0;
+ 
+}
+
+.cursor-text{position: absolute; right: -250px; top: -50px; color: #fff; width: 200px; height: 30px; font-family: 'Indie Flower', cursive; font-size: 24px;}
+
+
+
+.eff1{
+    animation-name: select2;
+    animation-duration: .7s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.eff2{
+    animation-name: select1;
+    animation-duration: .7s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes select1{
+    0%{transform: scale(1);}
+    100%{transform: scale(2.5); opacity: .3;}
+}
+@keyframes select2{
+    0%{transform: scale(0);}
+    100%{transform: scale(2); opacity: .5;}
+}
+
+
+
+
+
+.open-hide1{background: #000; width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: 100000;}
+.open-hide2{background: #000; width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: 99999; opacity: .5;}
+
+@media (max-width : 600px){
+    .page-indi{transform: rotate(0deg); left: 50px;}
+    .nav .nav-group .ham-group span{width: 30px; height: 3px; background: #fff;}.ham-list .ham-list-wrap ol li a{font-size: 50px;}
+    .copy-container{padding: 40px !important;}
+}
+
