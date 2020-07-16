@@ -171,13 +171,13 @@ width:100%; height:200px; top:40%;
 }
 .box{left:0;}
 .content{right:0;}
-.back0{background: #111;}
+.back0{background: #222;}
 .back1{background: #FFBE0A;}
 .back2{background: #2828CD;}
 .back3{background: #CD0000;}
 .back4{background: #00839d;}
 
-.content0-bg{width: 100%; height: 100%; background: #111;}
+.content0-bg{width: 100%; height: 100%; background: #222;}
 .content1-bg{width: 100%; height: 100%; background: url(
 slide/slide1.jpg); background-position: center center; background-size: cover;}
 .content2-bg{width: 100%; height: 100%; background: url(
