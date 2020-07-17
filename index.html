@@ -8,33 +8,47 @@
 	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="cover/CSS/style.css">
+    <link rel="stylesheet" href="general/aos.css">
     <link rel="stylesheet" href="general/navstyle.css">
 </head>
 <body>
+<div class="open-box sub-open"></div>
+<div class="open-box sub-open-pr"></div>
+
+<div class="sub-ani">
+       <div class="box-eff left-box"></div>
+       <div class="box-eff right-box"></div>
+</div>
+       <div class="wipe-box left-box-wipe"></div>
+       <div class="wipe-box left-box-wipe-pr"></div>
+       <div class="wipe-box right-box-wipe"></div>
+       <div class="wipe-box right-box-wipe-pr"></div>
 <div class="cursor-base">
 	<div class="cursor-eff1"></div>
 	<div class="cursor-text"></div>
+	<div class="cursor-text-left"></div>
 	<div class="cursor-eff2"></div>
 </div>
 <div class="ham-list row">
 	<div class="ham-list-wrap col-xs-4 col-sm-6 col-md-8">
-		<ol>
-			<li id="cover">
-				<a href="https://size250mm.github.io/COVER/.">cover</a>
+         <ol>
+           	<li class="next-cover">
+				cover
 			</li>
-			<li id="about">
-				<a href="https://size250mm.github.io/ABOUT/.">about</a>
+			<li class="next-about">
+				about
 			</li>
-			<li id="works">
-				<a href="https://size250mm.github.io/WORKS/.">portfolio</a>
+			<li class="next-works">
+				portfolio
 			</li>
-			<li id="contact">
-				<a href="https://size250mm.github.io/CONTACT/.">contact</a>
+			<li class="next-contact">
+				contact
 			</li>
-		</ol>
+         </ol>
 	</div>
 </div>
 <div class="cover row">
+<!--
 	<section class="open">
 		<div class="loading">
 			<div class="line"></div>
@@ -48,6 +62,7 @@
 			</div>
 		</div>
 	</section>
+-->
 	<nav class="nav nav-left">
 		<div class="page-indi">
 			<p>
@@ -77,6 +92,10 @@
 			<div class="nav-logo"></div>
 		</div>
 	</nav>
+	    <nav class="page-btn">
+        <div class="page-btn1 next-contact"><button>- CONTACT</button></div>
+        <div class="page-btn2 next-about"><button>ABOUT -</button></div>
+    </nav>
 	<div class="cover-main col-xs-12 col-sm-12 col-md-12">
 		<div class="slide-back back0"><div class="box-in"></div></div>
 		<div class="slide-back back1"><div class="box-in"></div></div>
@@ -155,3 +174,7 @@
 <script src="cover/SCRIPT/script.js"></script>
 <script src="general/nav-script.js"></script>
 <script src="general/mouse-script.js"></script>
+<script src="general/aos.js"></script>
+<script>
+AOS.init();
+</script>
